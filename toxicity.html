@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Detector de Comentarios Tóxicos</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/toxicity"></script>
+    <script defer src="tocxicity.js"></script>
+</head>
+<style>
+    
+</style>
+<body onload="initializeToxicity()">
+    <h1>Detector de Comentarios Tóxicos</h1>
+    <textarea id="textinput"  placeholder="Escribe aquí tu comentario..."></textarea><br>
+    <button onclick="checkToxicity()">Verificar Toxicidad</button>
+    <div id="results"></div>
+</body>
+</html>
